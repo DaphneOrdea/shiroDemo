@@ -27,7 +27,7 @@ public class App
         //通过SecurityUtils获取主体subject(主体)
         Subject subject = SecurityUtils.getSubject();
         //这里的username和password表示用户登陆时的账户密码，而非域里面查找的username和password。Token(凭证)
-        UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken("DaphneOrdea", "yyna");
+        UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken("DaphneOrdea", "yyn");
         try {
             //进行用户身份认证
             subject.login(usernamePasswordToken);
