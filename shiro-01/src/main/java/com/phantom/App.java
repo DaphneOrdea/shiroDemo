@@ -8,7 +8,7 @@ import org.apache.shiro.realm.text.IniRealm;
 import org.apache.shiro.subject.Subject;
 
 /**
- * Hello world!
+ *  Hello world!
  *  shiro 的流程配置
  */
 public class App 
