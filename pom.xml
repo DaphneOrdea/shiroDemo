@@ -10,6 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>shiro-01</module>
+        <module>shiro-02</module>
+        <module>shiro-jdbc</module>
     </modules>
 
     <!--导入依赖-->
