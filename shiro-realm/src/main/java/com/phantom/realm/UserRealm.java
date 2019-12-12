@@ -19,7 +19,7 @@ public class UserRealm  extends AuthorizingRealm {
 
     @Override
     public String getName() {
-        return "userRealm";
+        return this.getClass().getSimpleName();
     }
 
     //获取认证信息(从数据库中取数据,真正匹配验证的是shiro),完成身份认证，并且返回认证信息
@@ -33,6 +33,8 @@ public class UserRealm  extends AuthorizingRealm {
         //假使模拟从数据库获取的密码为1111
         String pwd = "1111";
         //SimpleAuthenticationInfo(简单身份验证)这里模拟的数据，这个身份验证的数据需从数据库查出来的，username,pwd
+        String name = getName();
+        System.out.println("name = " + name);
         SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(username,pwd,getName());
         return info;
     }
