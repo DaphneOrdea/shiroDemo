@@ -10,11 +10,11 @@
         <module name="shiro-jdbc" />
         <module name="shiro-md5" />
         <module name="shiro-realm" />
-        <module name="shiro-realm-md5" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="shiro-02" target="1.8" />
+      <module name="shiro-realm-md5" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
