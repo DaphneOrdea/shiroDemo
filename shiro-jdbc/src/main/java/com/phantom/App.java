@@ -8,6 +8,8 @@ import org.apache.shiro.mgt.DefaultSecurityManager;
 import org.apache.shiro.realm.jdbc.JdbcRealm;
 import org.apache.shiro.realm.text.IniRealm;
 import org.apache.shiro.subject.Subject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.sql.DataSource;
 
@@ -16,12 +18,12 @@ import javax.sql.DataSource;
  */
 public class App 
 {
+    private static final Logger log = LoggerFactory.getLogger(App.class);
     public static void main( String[] args )
     {
 
         //创建默认的安全管理器
 //
-
 
 
 
@@ -38,12 +40,14 @@ public class App
         SecurityUtils.setSecurityManager(defaultSecurityManager);
         Subject subject = SecurityUtils.getSubject();
         try {
-            subject.login(new UsernamePasswordToken("张三","123456"));
+            subject.login(new UsernamePasswordToken("张三","12s345"));
             if (subject.isAuthenticated()){
                 System.out.println("验证通过");
             }
         } catch (AuthenticationException e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+            log.error("验证失败");
+            System.out.println("验证失败");
         }
     }
 }
