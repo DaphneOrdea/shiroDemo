@@ -23,7 +23,7 @@ public class App
         securityManager.setRealm(iniRealm);
         SecurityUtils.setSecurityManager(securityManager);
         Subject subject = SecurityUtils.getSubject();
-        UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken("DaphneOrdea","yyn");
+        UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken("张三","12345");
         try {
             subject.login(usernamePasswordToken);
             if (subject.isAuthenticated()){
