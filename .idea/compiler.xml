@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="shiro-01" />
         <module name="shiro-jdbc" />
+        <module name="shiro-md5" />
+        <module name="shiro-realm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -40,7 +40,7 @@ public class App
         SecurityUtils.setSecurityManager(defaultSecurityManager);
         Subject subject = SecurityUtils.getSubject();
         try {
-            subject.login(new UsernamePasswordToken("张三","12s345"));
+            subject.login(new UsernamePasswordToken("张三","12345"));
             if (subject.isAuthenticated()){
                 System.out.println("验证通过");
             }

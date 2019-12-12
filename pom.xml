@@ -11,6 +11,8 @@
     <modules>
         <module>shiro-01</module>
         <module>shiro-jdbc</module>
+        <module>shiro-realm</module>
+        <module>shiro-md5</module>
     </modules>
 
     <!--导入依赖-->
