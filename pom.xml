@@ -15,6 +15,7 @@
         <module>shiro-md5</module>
         <module>shiro-realm-md5</module>
         <module>shiro-roles</module>
+        <module>shiro-realm-roles</module>
     </modules>
 
     <!--导入依赖-->

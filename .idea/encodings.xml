@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/shiro-01" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shiro-jdbc" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shiro-md5" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shiro-realm-roles" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shiro-roles" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
