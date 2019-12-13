@@ -10,6 +10,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/shiro-02/pom.xml" />
+        <option value="$PROJECT_DIR$/shiro-realm-md5/pom.xml" />
       </set>
     </option>
   </component>
